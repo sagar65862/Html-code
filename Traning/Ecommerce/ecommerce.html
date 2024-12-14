@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SD Collection.com</title>
+</head>
+
+<body>
+    <nav>
+
+        <h3>SD COLLECTION</h3>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">list</a></li>
+            <li><a href="">contact</a></li>
+            <li><a href="">Menu</a></li>
+            <li><input type="text">Search</li>
+        </ul>
+    </nav>
+
+    <h2>Shop by catagory</h2>
+    <div class="main">
+        <section class="first">
+            <a href="eeeee.html"><img src="sneakers.jpeg" alt=""></a>
+            <li><a href="">Sneakers</a></li>
+        </section>
+        <section class="first">
+            <a href="e.html"><img src="shoes.jpeg" alt=""></a>
+            <li><a href="">Shoes</a></li>
+        </section>
+        <section class="first">
+            <a href=""></a><img src="tshirt.jpeg" alt="">
+            <li><a href="">Apparel</a></li>
+        </section>
+        <section class="first">
+            <a href=""></a><img src="accessories.jpg" alt="">
+            <li><a href="">Accessories</a></li>
+        </section>
+
+
+
+    </div>
+<div class="slider_container">
+
+    <section class="image">
+        <img class="mySlides" src="a.jpg" alt="">
+        <img class="mySlides" src="c.jpg" alt="">
+        <img class="mySlides" src="d.jpg" alt="">
+    </section>
+    <section class="photo">
+        <img class="Slides" src="i.jpg" alt="">
+        <img class="Slides" src="j.jpg" alt="">
+        <img class="Slides" src="k.jpg" alt="">
+    </section>
+    <section class="picture">
+        <img class="my" src="g.jpg" alt="">
+        <img class="my" src="e.jpeg" alt="">
+        <img class="my" src="f.jpg" alt="">
+    </section>
+</div>
+
+</body>
+
+</html>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+    }
+
+    body {
+        background-color: cadetblue;
+        justify-content: flex-start;
+        align-items: center;
+        background-image: url(b.jpg);
+    }
+
+    nav {
+        display: flex;
+        background-color: antiquewhite;
+        justify-content: space-between;
+        padding: 10px;
+        align-items: center;
+
+
+    }
+
+    ul li a:hover {
+        color: blue
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav ul li {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    ul li a {
+        text-decoration: none;
+    }
+
+
+
+    .main {
+        text-decoration: none;
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin-top: 20px;
+
+
+    }
+
+    h3 {
+        color: maroon;
+    }
+
+    h2 {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: snow;
+    }
+
+    .first {
+        /* height: 200px; */
+        /* width: 200px; */
+        padding: 20px;
+        text-align: center;
+        height: max-content;
+    }
+
+    .main li a:hover {
+        color: yellow;
+
+    }
+
+.slider_container{
+    display: flex;
+    justify-content: space-around;
+    
+
+}
+    .first img {
+        height: 150px;
+        width: 150px;
+
+        /* margin-top: 200px; */
+        margin-right: 50px;
+        border-radius: 20px;
+        border: 10px solid black;
+    }
+
+    .first a {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: whitesmoke;
+        font-size: 16px;
+    }
+
+    .image img {
+        height: 150px;
+        width: 300px;
+        /* margin-top: 250px; */
+    }
+
+    .picture img {
+        height: 150px;
+        width: 250px;
+        /* margin-left: 200px; */
+        /* margin-top: 250px; */
+    }
+
+    .photo img {
+        height: 150px;
+        width: 250px;
+        /* margin-top: 250px; */
+        /* margin-left: 1px; */
+    }
+</style>
+<script>
+function startCarousel(className) {
+    var myIndex = 0;
+    
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName(className);
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) { myIndex = 1 }
+        x[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 1000);
+    }
+    
+    carousel();
+}
+
+// Start carousels for each section
+startCarousel("mySlides");
+startCarousel("Slides");
+startCarousel("my");
+
+</script>

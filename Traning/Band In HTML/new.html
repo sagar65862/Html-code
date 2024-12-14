@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <ul class="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="">Band</a></li>
+                <li><a href="">Tour</a></li>
+                <li><a href="">Contact</a></li>
+                
+    
+            </ul>
+        </div>
+    </nav>
+    <section class="image">
+        <img class="mySlides" src="bipul.jpg" alt="">
+        <img class="mySlides" src="con.jpg" alt="">
+        <img class="mySlides" src="images.jpg" alt="">
+    </section>
+    <div class="outline">
+    <div class="note">
+        <h2>THE BAND</h2>
+        <p class="draft"><i>We love music</i></p>
+        <p class="w">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed est rem ipsum pariatur officiis enim, sint eveniet et saepe a aut! Quas dolor ipsa iusto voluptatibus distinctio in necessitatibus repellendus sunt vero mollitia, porro rerum eligendi atque voluptatum perferendis incidunt perspiciatis nihil expedita fugiat maiores pariatur beatae laudantium? Voluptatum in dolore accusamus ex explicabo, iusto excepturi ratione, aliquid incidunt minus nam dignissimos similique fugit cumque repudiandae eveniet aspernatur reprehenderit corrupti? Eaque molestias odit sapiente maxime, quibusdam ipsam autem placeat consectetur facilis ducimus dicta blanditiis quod tempora earum? Totam itaque saepe ipsam quo, facere corrupti modi. Sint ratione officiis quos est voluptatem modi atque laborum odit accusantium, voluptates possimus beatae ut aut unde autem tempore facere, quae quo. Deserunt culpa voluptatum doloremque maxime minus placeat provident consectetur error. Corrupti a quisquam recusandae quaerat dolorem eveniet. Perspiciatis, nam? Exercitationem minima suscipit soluta minus, reiciendis fugit culpa rem quia consequatur cum sed repudiandae? </p>
+    </div>
+    </div>
+    
+</body>
+
+</html>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .body{
+        margin: 0px;
+        padding: 0px;
+        font-family: sans-serif;
+        overflow: scroll;
+        
+    }
+    .nav{
+        height: 50px;
+        width: 100%;
+        display: flex;
+        background-color: black;
+        align-items: center;
+
+    }
+    .nav ul{
+        display: flex;
+        list-style: none;
+        
+    }
+    .nav ul li{
+        padding-left: 10%;
+    }
+    ul li a{
+        text-decoration: none;
+        color: aliceblue;
+        padding: 10px;
+    }
+    ul li a:hover{
+        background-color: blue;
+    }
+    .image img{
+        width: 100%;
+        height: 1%;
+
+    }
+    .note{
+        padding: 5%;
+        margin-left: 20px;
+        width: 50%;
+    }
+    .note h2{
+        text-align: center;
+    }
+    .draft{
+        text-align: center;
+        opacity: 30%;
+
+    }
+    .w{
+        text-align: justify;
+    }
+    .outline{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+</style>
+<script>
+    var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script> 

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+   
+</head>
+<body>
+   
+  <header class="header">
+    
+    <nav class="navbar">
+        <img src="photo.jpg" alt="">
+      <h1 class="logo">My Portfolio</h1>
+      <ul class="nav-links">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Portfolio</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="about" class="about-section">
+    <h2>About Me</h2>
+    <p>Hello! I'm Sagar Dahal, a passionate Student with experience in creating amazing projects.</p>
+  </section>
+
+  <section id="portfolio" class="portfolio-section">
+    <h2>My Work</h2>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">
+        <img src="Screenshot 2024-12-07 191840.png" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Working Calculator.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="ATM.png" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Atomated teller machine.</p>
+      </div>
+      <div class="portfolio-item">
+        <img src="TIC.png" alt="Project 3">
+        <h3>Project 3</h3>
+        <p>Tic Tac Toe game.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; Sagar Dahal.</p>
+  </footer>
+</body>
+</html>
+    
+    
+</body>
+</html>
+<style>
+    /* Global Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color:brown;
+  background-color: black;
+}
+
+a {
+  text-decoration: none;
+  color:blue;
+}
+
+/* Header */
+.header {
+  background: black;
+  color: white;
+  padding: 1px 0;
+  text-align: center;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-links li a {
+  color: #827979;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: violet;
+}
+
+/* About Section */
+.about-section {
+  padding: 2rem 20px;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 2rem 20px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.portfolio-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+}
+
+.portfolio-item h3 {
+  margin: 0.5rem 0;
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 1rem;
+}
+.navbar img{
+    height: 100px;
+    width: 90px;
+    padding: 1%;
+}
+</style>
